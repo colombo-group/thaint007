@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class Database</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+		</div>
+
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Config.html">Config</a></li>
+				<li><a href="class-Cookie.html">Cookie</a></li>
+				<li class="active"><a href="class-Database.html">Database</a></li>
+				<li><a href="class-Hash.html">Hash</a></li>
+				<li><a href="class-Input.html">Input</a></li>
+				<li><a href="class-Redirect.html">Redirect</a></li>
+				<li><a href="class-Session.html">Session</a></li>
+				<li><a href="class-Token.html">Token</a></li>
+				<li><a href="class-User.html">User</a></li>
+				<li><a href="class-Validate.html">Validate</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Database</h1>
+
+
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		
+		
+
+			<b>Located at</b> <a href="source-class-Database.html#2-180" title="Go to source code">Database.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="getInstance" id="_getInstance">
+
+		<td class="attributes"><code>
+			 public static
+
+			type
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getInstance">#</a>
+		<code><a href="source-class-Database.html#19-28" title="Go to source code">getInstance</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					type
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="query" id="_query">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Database.html">Database</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_query">#</a>
+		<code><a href="source-class-Database.html#29-55" title="Go to source code">query</a>( <span>type <var>$sql</var></span>, <span>type <var>$params</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			<p>th?c hi?n các câu l?nh sql</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>th?c hi?n các câu l?nh sql</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$sql</var></dt>
+					<dd>câu l?nh sql</dd>
+					<dt><var>$params</var></dt>
+					<dd>các tham s? truy?n vào</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Database.html">Database</a></code><br>tr? v? true n?u truy v?n thành công, ng??c l?i tr? v? fasle
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="action" id="_action">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean|<code><a href="class-Database.html">Database</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_action">#</a>
+		<code><a href="source-class-Database.html#56-79" title="Go to source code">action</a>( <span>type <var>$action</var></span>, <span>type <var>$table</var></span>, <span>type <var>$where</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			<p>th?c hi?n các câu truy v?n</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>th?c hi?n các câu truy v?n</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$action</var></dt>
+					<dd>ho?t ??ng truy v?n</dd>
+					<dt><var>$table</var></dt>
+					<dd>b?ng c?n truy v?n</dd>
+					<dt><var>$where</var></dt>
+					<dd>?i?u ki?n</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean|<code><a href="class-Database.html">Database</a></code><br>tr? v? ho?t ??ng n?u câu lênh sql ?úng ho?c fasle n?u $where!=3
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get" id="_get">
+
+		<td class="attributes"><code>
+			 public 
+
+			type
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get">#</a>
+		<code><a href="source-class-Database.html#80-88" title="Go to source code">get</a>( <span>type <var>$table</var></span>, <span>type <var>$where</var></span> )</code>
+
+		<div class="description short">
+			<p>th?c hi?n l?y d? li?u t? csdl</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>th?c hi?n l?y d? li?u t? csdl</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd>tên b?ng c?n l?y</dd>
+					<dt><var>$where</var></dt>
+					<dd>?i?u ki?n</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					type<br>tr? v? hành ??ng th?c hi?n câu l?nh select
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="delete" id="_delete">
+
+		<td class="attributes"><code>
+			 public 
+
+			type
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_delete">#</a>
+		<code><a href="source-class-Database.html#89-97" title="Go to source code">delete</a>( <span>type <var>$table</var></span>, <span>type <var>$where</var></span> )</code>
+
+		<div class="description short">
+			<p>xóa 1 tr??ng thông tin trong b?ng</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>xóa 1 tr??ng thông tin trong b?ng</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd>tên b?ng</dd>
+					<dt><var>$where</var></dt>
+					<dd>?i?u ki?n</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					type<br>tr? v? hành ??ng th?c hi?n câu l?nh delete
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="insert" id="_insert">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_insert">#</a>
+		<code><a href="source-class-Database.html#98-125" title="Go to source code">insert</a>( <span>type <var>$table</var></span>, <span>type <var>$fields</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			<p>thêm d? li?u vào csdl</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>thêm d? li?u vào csdl</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd>tên b?ng c?n thêm</dd>
+					<dt><var>$fields</var></dt>
+					<dd>các d? li?u c?n thêm</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean<br>n?u không t?n t?i l?i thì tr? v? true, n?u k t?n t?i giá tr? $fields tr? v? false
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="update" id="_update">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_update">#</a>
+		<code><a href="source-class-Database.html#126-151" title="Go to source code">update</a>( <span>type <var>$table</var></span>, <span>type <var>$id</var></span>, <span>type <var>$fields</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			<p>s?a d? li?u trong csdl</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>s?a d? li?u trong csdl</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd>tên b?ng c?n s?a</dd>
+					<dt><var>$id</var></dt>
+					<dd>id tr??ng d? li?u c?n s?a</dd>
+					<dt><var>$fields</var></dt>
+					<dd>d? li?u c?n s?a</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean<br>n?u không t?n t?i l?i thì tr? v? true, ng??c l?i tr? v? false
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="results" id="_results">
+
+		<td class="attributes"><code>
+			 public 
+
+			type
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_results">#</a>
+		<code><a href="source-class-Database.html#152-158" title="Go to source code">results</a>( )</code>
+
+		<div class="description short">
+			<p>th?c hi?n l?y k?t qu?</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>th?c hi?n l?y k?t qu?</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					type<br>tr? v? k?t qu?
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="first" id="_first">
+
+		<td class="attributes"><code>
+			 public 
+
+			type
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_first">#</a>
+		<code><a href="source-class-Database.html#159-165" title="Go to source code">first</a>( )</code>
+
+		<div class="description short">
+			<p>l?y k?t qu? ??u tiên</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>l?y k?t qu? ??u tiên</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					type<br>tr? v? k?t qu? ??u tiên
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="error" id="_error">
+
+		<td class="attributes"><code>
+			 public 
+
+			type
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_error">#</a>
+		<code><a href="source-class-Database.html#166-172" title="Go to source code">error</a>( )</code>
+
+		<div class="description short">
+			<p>l?y thông báo l?i</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>l?y thông báo l?i</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					type<br>tr? v? thông báo l?i
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="count" id="_count">
+
+		<td class="attributes"><code>
+			 public 
+
+			type
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_count">#</a>
+		<code><a href="source-class-Database.html#173-179" title="Go to source code">count</a>( )</code>
+
+		<div class="description short">
+			<p>l?y giá tr?</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>l?y giá tr?</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					type<br>tr? v? giá tr?
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>
